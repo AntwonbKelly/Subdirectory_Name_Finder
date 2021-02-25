@@ -1,0 +1,25 @@
+﻿<Window x:Class="Subdirectory_Name_Finder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Subdirectory_Name_Finder"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Viewbox StretchDirection="Both" Stretch="Uniform">
+        <Grid>
+            <ListBox x:Name="FirstLbox" HorizontalAlignment="Left" Height="371" Margin="-24,38,0,0" VerticalAlignment="Top" Width="281" ItemsSource="{Binding Mode=OneWay}"/>
+            <Button x:Name="SelectDirButton" Content="SearchDir" HorizontalAlignment="Left" Margin="262,64,0,0" VerticalAlignment="Top" Width="120" Height="44" Click="SelectDirButton_Click"/>
+            <Label Content="Select Directory" HorizontalAlignment="Left" Margin="276,33,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.473,-0.538"/>
+            <TextBox x:Name="DirNameTextBox" HorizontalAlignment="Left" Height="23" Margin="262,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Enter String" HorizontalAlignment="Left" Margin="283,132,0,0" VerticalAlignment="Top"/>
+            <ListBox x:Name="SecondLBox" HorizontalAlignment="Left" Height="351" Margin="392,38,-20,0" VerticalAlignment="Top" Width="342" ItemsSource="{Binding Mode=OneWay}"/>
+            <Label Content="Directories Found Based on String" HorizontalAlignment="Left" Margin="392,8,-20,0" VerticalAlignment="Top" Width="342" FontSize="18"/>
+            <Button x:Name="DirectorieNamesToFind" Content="SearchNames" HorizontalAlignment="Left" Margin="262,204,0,0" VerticalAlignment="Top" Width="120" Height="39" Click="DirectorieNamesToFind_Click"/>
+            <Label Content="SubDirectory Paths" HorizontalAlignment="Left" Margin="-24,10,0,0" VerticalAlignment="Top" FontSize="16"/>
+            <TextBox x:Name="DirCounter" HorizontalAlignment="Left" Height="26" Margin="213,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="44"/>
+            <TextBox x:Name="DirCounter2" HorizontalAlignment="Left" Height="26" Margin="690,12,-20,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="44"/>
+
+        </Grid>
+    </Viewbox>
+</Window>
