@@ -5,8 +5,8 @@ Enter a string to search for a specific subdirectory within a main directory to 
 # How to use
 
 
-1. Press <b>Select Dir</b> To select a main directory that contains mutliple subdirectorys.
+1. Press <b>Select Dir</b> To select a main directory that has multiple subdirectory.
 
 2. Enter a word to search for 
 
-3. Press the <b>SearchNames</b> button in order to locate desired subdirectories based on entered word
+3. Press the <b>SearchNames</b> button to find desired subdirectory based on entered word
